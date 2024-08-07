@@ -2,16 +2,30 @@
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
 import './App.css'
-// import Product from './Product';
-// import AppBooks from './books';
+import Product from './Product';
+import AppBooks from './books';
 // import  Card  from './Card';
 import { Alert } from './Alert/Alert';
-
+import Icons from './Icons/Icons'
 
 export default function App() {
   return (
     <div>
-      <h1>Card title</h1>
+      
+      < Icons />
+      <AppBooks />
+      <h2>Products</h2>
+      <Product
+        name="Tacos With Lime"
+        imgUrl="https://images.pexels.com/photos/461198/pexels-photo-461198.jpeg?dpr=2&h=480&w=640"
+        price={10.99}
+      />
+      <Product
+        name="Fries and Burger"
+        imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
+        price={14.29}
+      />
+      <h2>Text alert</h2>
      <Alert variant="info" outlined>
         Would you like to browse our recommended products?
       </Alert>

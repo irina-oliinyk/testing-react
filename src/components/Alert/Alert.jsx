@@ -1,17 +1,22 @@
-import './Alert.css'
+// import './Alert.css'
 import clsx from "clsx";
+import css from './Alert.module.css'
 
 
 
 export const Alert = ({ variant, outlined, elevated, children }) => {
   return (
     <p
-      className={clsx("alert", variant, {
-        "is-outlined": outlined,
-        "is-elevated": elevated,
-      })}
+      className={clsx(
+        css.alert,
+        css.alertParagraf,
+        css[variant],
+        outlined && css.isOutlined,
+        elevated && css.isElevated
+      )}
     >
       {children}
     </p>
   );
 };
+
