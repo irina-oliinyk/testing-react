@@ -15,6 +15,7 @@ export default function App() {
       <Icons />
       <ClickUser />
       <AppBooks />
+      <ClickUser />
       <h2>Products</h2>
       <Product
         name="Tacos With Lime"
