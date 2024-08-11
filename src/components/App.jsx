@@ -1,18 +1,19 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'
+import './App.css';
 import Product from './Product';
 import AppBooks from './books';
 // import  Card  from './Card';
 import { Alert } from './Alert/Alert';
-import Icons from './Icons/Icons'
+import Icons from './Icons/Icons';
+import { ClickUser } from './Click/Click';
 
 export default function App() {
   return (
     <div>
-      
-      < Icons />
+      <Icons />
+      <ClickUser />
       <AppBooks />
       <h2>Products</h2>
       <Product
@@ -26,7 +27,7 @@ export default function App() {
         price={14.29}
       />
       <h2>Text alert</h2>
-     <Alert variant="info" outlined>
+      <Alert variant="info" outlined>
         Would you like to browse our recommended products?
       </Alert>
       <Alert variant="error" outlined>
@@ -38,12 +39,9 @@ export default function App() {
       <Alert variant="warning" outlined elevated>
         Please update your profile contact information
       </Alert>
-      
     </div>
   );
 }
-
-
 
 //  <Card>
 // 	     <h1>Card title</h1>
@@ -61,4 +59,3 @@ export default function App() {
 //         imgUrl="https://images.pexels.com/photos/70497/pexels-photo-70497.jpeg?dpr=2&h=480&w=640"
 //         price={14.29}
 //       />
-      
