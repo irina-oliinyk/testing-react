@@ -1,0 +1,11 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input {
+  border-radius: 5px;
+  background-color: #fff;
+  color: black;
+}
