@@ -1,0 +1,25 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 250px;
+  margin: 0 auto;
+}
+
+.field {
+  border-radius: 5px;
+  background-color: antiquewhite;
+  color: black;
+}
+
+.message {
+  border-radius: 5px;
+  background-color: antiquewhite;
+  color: black;
+  width: 233px;
+}
+
+.error {
+  color: red;
+  font-size: 25px;
+}

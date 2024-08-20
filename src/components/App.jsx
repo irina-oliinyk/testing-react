@@ -8,22 +8,24 @@ import './App.css';
 // import { Alert } from './Alert/Alert';
 import Icons from './Icons/Icons';
 // import { ClickUser } from './Click/Click';
+import FeedbackForm from './FeedbackForm/FeedbackForm';
 
-import LoginForm from './LoginForm/LoginForm';
+// import LoginForm from './LoginForm/LoginForm';
 
 export default function App() {
   // Колбек-функція для обробки сабміту форми
-  const handleLogin = userData => {
-    // Виконуємо необхідні операції з даними
-    console.log(userData);
-  };
+  // const handleLogin = userData => {
+  //   // Виконуємо необхідні операції з даними
+  //   console.log(userData);
+  // };
 
   return (
     <div>
       <Icons />
       <h1>Please login to your account!</h1>
       {/* Передаємо колбек як пропс форми */}
-      <LoginForm onLogin={handleLogin} />
+      {/* <LoginForm onLogin={handleLogin} /> */}
+      <FeedbackForm />
     </div>
   );
 }
