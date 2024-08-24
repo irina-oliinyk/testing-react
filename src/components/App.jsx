@@ -9,6 +9,7 @@ import './App.css';
 import Icons from './Icons/Icons';
 // import { ClickUser } from './Click/Click';
 import FeedbackForm from './FeedbackForm/FeedbackForm';
+import Articles from './Articles/Articles';
 
 // import LoginForm from './LoginForm/LoginForm';
 
@@ -22,7 +23,9 @@ export default function App() {
   return (
     <div>
       <Icons />
+      <Articles />
       <h1>Please login to your account!</h1>
+
       {/* Передаємо колбек як пропс форми */}
       {/* <LoginForm onLogin={handleLogin} /> */}
       <FeedbackForm />
